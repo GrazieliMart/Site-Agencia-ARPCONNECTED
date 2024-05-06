@@ -1,0 +1,28 @@
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+
+    /* largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000; /* cor de fundo da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;  border-radius: 50px;/* cor do indicador da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; /* cor do indicador da barra de rolagem ao passar o mouse */
+  }
+
+  
+
+  body {
+   
+    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+padding: 0;
+}
