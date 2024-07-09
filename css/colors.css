@@ -1114,3 +1114,19 @@ text-align: center;
   margin-right: 10px;
   font-size: 12px; /* Tamanho da fonte do ícone */
 }
+.faixa {
+  width: 100%;
+  height: 200px;
+  background-color: #ccc; /* Pode alterar para a cor desejada */
+  overflow: hidden; /* Garante que o conteúdo que ultrapassar a div seja escondido */
+  position: relative;
+}
+
+.faixa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem para cobrir a div sem distorção */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
