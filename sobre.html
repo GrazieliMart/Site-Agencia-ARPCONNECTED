@@ -25,24 +25,28 @@
 <div class="overlaytop"></div>
 
 
+
 <nav class="navbar">
   <a class="navbar-brand" href="index.html"><img src="assets/LOGO2.png" alt="Logo"></a>
+  <div class="navbar-toggler"><i class="bi bi-list"></i></div>
   <ul class="navbar-nav">
     <li><a href="index.html">home</a></li>
     <li><a href="sobre.html">quem somos</a></li>
     <li><a href="portifolio.html">portifólio</a></li>
-    <li>
-      <a href="contato.html">contato</a>
-     
-    </li>
+    <li><a href="contato.html">contato</a></li>
   </ul>
   <div class="social-icons">
     <a href="https://www.instagram.com/arpconnected/"><i class="bi bi-instagram"></i></a>
     <a href="https://api.whatsapp.com/send?phone=5511974381506&text=Ol%C3%A1!%20Gostaria%20de%20entrar%20em%20contato%20com%20a%20ARP%20CONNECTED%20e%20saber%20mais%20dos%20seus%20servi%C3%A7os."><i class="bi bi-whatsapp"></i></a>
-  
     <a href="https://api.whatsapp.com/send?phone=5511974381506&text=Ol%C3%A1!%20Gostaria%20de%20entrar%20em%20contato%20com%20a%20ARP%20CONNECTED%20e%20saber%20mais%20dos%20seus%20servi%C3%A7os."><button class="contact-buttom">SOLICITAR COTAÇÃO</button></a>
   </div>
 </nav>
+
+<script>
+  document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    document.querySelector('.navbar-nav').classList.toggle('active');
+  });
+</script>
 
 <div class="background-section">
   <img src="assets/about.png" alt="Background" class="parallax">
