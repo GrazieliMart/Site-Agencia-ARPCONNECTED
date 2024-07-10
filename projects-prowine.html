@@ -8,8 +8,116 @@
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/work.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="shortcut icon" href="assets/logonav.png" type="image/x-icon">
   <title>ARP - Connected I Montadora de Stands I Projetos 3D I Comunicação Visual</title>
+  <style>
+    @media screen and (max-width: 900px) {
+      .complex-container {
+      display: grid;
+      margin-top: -5px;
+      max-width: 100%;
+      justify-content: center;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .intricate-left-section {
+          width: 300px;
+          /* padding: 0px; */
+      }
+     
+  .advanced-slider {
+      position: relative;
+      overflow: hidden;
+      width: 350px;
+      height: 350px;
+  }
+  .detailed-slides img {
+      flex-shrink: 0;
+      width: 350px;
+      height: 350px;
+  }
+  .elaborate-right-section {
+      position: relative;
+      justify-content: center;
+      display: flex;
+      padding: 0;
+  }    .header-content {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 20px;
+          padding-right: 0px;
+          padding-left: 0px;
+          background-color: #efefef;
+          margin-bottom: 20px;
+          box-shadow: 10px 0 00px rgba(0, 0, 0, 0.1);
+      }   .containerwork {
+          margin-top: -20px;
+          justify-content: center;
+          margin-bottom: -30px;
+          display: grid;
+          background-color: #efefef;
+          justify-content: center;
+          padding: 20px;
+      }
+      .containerwork .item img {
+          height: 100%;
+          border-radius: 0;
+          width: 350px;
+      }
+      .containerwork .text-overlay {
+          justify-content: end;
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          width: 250px;
+          font-weight: bold;
+          /* bottom: 0px; */
+          text-align: center;
+          font-size: 10px;
+          transform: translate(-50%, -50%);
+          color: white;
+          z-index: 1;
+      }
+      .video-section2 {
+          position: relative;
+          width: 100%;
+          margin-top: -5px;
+          height: 400px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .video-section2 h1 {
+          color: white;
+          font-size: 1em;
+          text-align: center;
+      }
+      .video-section2 p {
+          color: white;
+          margin-top: 20px;
+          font-size: 15px;
+          text-align: center;
+      }    .video-section2 img {
+          height: 50px;
+      }
+      .marquee span {
+          display: inline-block;
+          animation: marquee 500s linear infinite;
+          font-size: 2rem;
+          font-weight: bold;
+          -webkit-text-stroke: 1px black;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          white-space: nowrap;
+      }
+      .complex-container h1{
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
     <script>
@@ -25,9 +133,13 @@
     </div>
     
 
+
     <nav class="navbar">
       <a class="navbar-brand" href="index.html"><img src="assets/LOGO2.png" alt="Logo"></a>
-      <div class="navbar-toggler"><i class="bi bi-list"></i></div>
+      <div class="navbar-toggler">
+        <i class="bi bi-list menu-icon"></i>
+        <i class="bi bi-x menu-icon d-none"></i>
+      </div>
       <ul class="navbar-nav">
         <li><a href="index.html">home</a></li>
         <li><a href="sobre.html">quem somos</a></li>
@@ -40,14 +152,20 @@
         <a href="https://api.whatsapp.com/send?phone=5511974381506&text=Ol%C3%A1!%20Gostaria%20de%20entrar%20em%20contato%20com%20a%20ARP%20CONNECTED%20e%20saber%20mais%20dos%20seus%20servi%C3%A7os."><button class="contact-buttom">SOLICITAR COTAÇÃO</button></a>
       </div>
     </nav>
-    
-    <script>
-      document.querySelector('.navbar-toggler').addEventListener('click', function() {
-        document.querySelector('.navbar-nav').classList.toggle('active');
-      });
-    </script>
-    
+    <div class="overlay-nav d-none"></div>
+  <script src="js/nav.js"></script>
 
+
+
+
+    
+  <a href="#" class="scroll-to-top">
+    <img src="assets/arrow.png" alt="Seta para cima">
+  </a>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/about.js"></script>
+  <script src="js/top.js"></script>
+  
 
 
 
