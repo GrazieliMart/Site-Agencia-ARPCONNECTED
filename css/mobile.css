@@ -3,7 +3,7 @@
     margin-top: -20px;
     justify-content: center;
     margin-bottom: -30px;
-    display: grid;
+    display: flex;
     background-color: #efefef;
     justify-content: center;
     padding: 20px;
@@ -41,21 +41,22 @@
 
 @media screen and (max-width: 1400px) {
     .containerwork {
-        margin-top: -20px;
+        margin-top: 20px;
         justify-content: center;
         margin-bottom: -30px;
    
         background-color: #efefef;
         justify-content: center;
         padding: 20px;
-    }.containerwork .item img {
+    }    .containerwork .item img {
         height: 100%;
         border-radius: 0;
-        width: 250px;
+        width: 120px;
     }.containerwork .text-overlay {
         justify-content: end;
         position: absolute;
         top: 60%;
+        display: none;
         left: 50%;
         width: 250px;
         font-weight: bold;
@@ -69,6 +70,7 @@
     .containerwork .overlay1 p, .containerwork .overlay1 button {
         justify-content: end;
         position: absolute;
+        display: none;
         top: 83%;
         width: 220px;
         left: 50%;
