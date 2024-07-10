@@ -53,18 +53,19 @@
           margin-bottom: 20px;
           box-shadow: 10px 0 00px rgba(0, 0, 0, 0.1);
       }   .containerwork {
-          margin-top: -20px;
-          justify-content: center;
-          margin-bottom: -30px;
-          display: grid;
-          background-color: #efefef;
-          justify-content: center;
-          padding: 20px;
+        margin-top: 20px;
+        justify-content: center;
+        margin-bottom: 30px;
+        display: flex;
+        background-color: #efefef;
+        justify-content: center;
+        padding: 20px;
       }
+
       .containerwork .item img {
-          height: 100%;
-          border-radius: 0;
-          width: 350px;
+        height: 100%;
+        border-radius: 0;
+        width: 110px;
       }
       .containerwork .text-overlay {
           justify-content: end;
@@ -307,8 +308,12 @@
 
 
   <div class="video-section2">
-    <video src="assets/arp-video-intro.mp4" autoplay muted loop playsinline></video>
-    <div class="center-content">
+    <div class="video-section2">
+      <video autoplay muted loop playsinline>
+        <source src="assets/arp-video-intro.mp4" type="video/mp4">
+        <source src="assets/arp-video-intro.webm" type="video/webm">
+        Seu navegador não suporta vídeos HTML5.
+      </video><div class="center-content">
       <img src="assets/LOGO2.png" alt="">
         <h1>Do início ao fim. Nós cuidamos de tudo!</h1>
         <p>Entre em contato com a ARP e faça a sua cotação</p>
