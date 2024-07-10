@@ -67,6 +67,10 @@
         color: white;
         z-index: 1;
     }
+    .mobile-space{
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
     .containerwork .overlay1 p, .containerwork .overlay1 button {
         justify-content: end;
         position: absolute;
