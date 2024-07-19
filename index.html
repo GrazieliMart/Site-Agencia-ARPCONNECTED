@@ -350,6 +350,19 @@
 </div>
 
 </div>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>Email.send({
+  Host : "smtp.elasticemail.com",
+  Username : "username",
+  Password : "password",
+  To : 'them@website.com',
+  From : "you@isp.com",
+  Subject : "This is the subject",
+  Body : "And this is the body"
+}).then(
+message => alert(message)
+);</script>
 <div class="divforms">
  
   <div class="left" >
@@ -376,7 +389,7 @@
            <label>Email</label>
        </div>
        <div class="user-box">
-           <input required="" name="celular" type="tel" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}">
+           <input required="" name="celular" type="tel">
            <label>Celular</label>
        </div>
        <div class="user-box">
