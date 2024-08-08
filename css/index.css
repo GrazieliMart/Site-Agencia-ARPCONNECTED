@@ -55,9 +55,6 @@
   transition: filter 0.3s ease-in-out;
 }
 
-.item:hover img {
-    filter: grayscale(100%); /* Deixa a imagem em escala de cinza no hover */
-}
 
 .video-overlay {
     display: none;
@@ -227,7 +224,7 @@ padding: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: translateZ(-1px) scale(2); /* Efeito parallax */
+ 
 }
 
 .background-section .foreground {
